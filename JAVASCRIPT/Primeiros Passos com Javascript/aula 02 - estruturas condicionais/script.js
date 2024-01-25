@@ -1,5 +1,6 @@
 
-const cabeloPedroEhLoiro = false
-const cabeloQueziaEhMoreno = true
+const numero = 11
 
-10 <= 5
+const numeroPar = (numero % 2) === 0
+
+console.log(numeroPar)
