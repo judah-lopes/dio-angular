@@ -1,14 +1,26 @@
+// Faça um programa para calcular o valor de uma viagem.
 
-const numero = 2
+// Você terá 3 variáveis. Sendo elas:
+//     1 - Preço do etanol;
+//     2 - Preço da gasolina;
+//     3 - O tipo de combustível que está no seu carro;
+//     4 - Gasto médio de combustível do carro por KM;
+//     5 - Distância em Km da viagem;
+     
+// Imprima no console o valor que será gasto na viagem.
 
-const numeroDivisivelPor5 = (numero % 5) === 0
+let precoDoEtanol = 4
+let precoDaGasolina = 5.5
+let tipoDeCombustivel = "Gasolina"
+let kmPorLitros = 12
+let distanciaEmKm = 300
 
-if (numero === 0) {
-    console.log(`O número é inválido`)
-} else if (numero === 5){
-    console.log(`O número é inválido`)
-} else if (numeroDivisivelPor5) {
-    console.log(`Sim`)
+const consumoTotalDeCombustivel = distanciaEmKm / kmPorLitros
+
+if (tipoDeCombustivel === "Etanol") {
+    var valorGastoNaViagem = consumoTotalDeCombustivel * precoDoEtanol
 } else {
-    console.log(`Não`)
+    var valorGastoNaViagem = consumoTotalDeCombustivel * precoDaGasolina
 }
+
+console.log(`O gasto estimado com combustível para essa viagem será de R$${valorGastoNaViagem.toFixed(2)}`)
