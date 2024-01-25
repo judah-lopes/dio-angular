@@ -1,12 +1,17 @@
+// Faça um programa para calcular o valor de uma viagem.
 
-let variavel = 10;
+// Você terá 3 variáveis. Sendo elas:
+//     1 - Preço do combustível;
+//     2 - Gasto médio de combustível para realizar esta viagem;
+//     3 - Distância em KM da viagem;
 
-// variavel = 10 + 10
+// Imprima no console o valor que será gasto para realizar esta viagem.
 
-// variavel = 10 - 10
+let precoDoCombustivel = 5.50
+let kmPorLitros = 12
+let distanciaEmKm = 300 
 
-// variavel = 10 * 10
+const consumoTotalDeCombustivel = distanciaEmKm / kmPorLitros
+const valorGastoNaViagem = consumoTotalDeCombustivel * precoDoCombustivel
 
-variavel = 10 / 10
-
-console.log(variavel)
+console.log(`O gasto estimado com combustível para essa viagem será de R$${valorGastoNaViagem.toFixed(2)}`)
