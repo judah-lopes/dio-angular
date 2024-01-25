@@ -25,11 +25,15 @@ O curso é dividido em 6 módulos. Sendo estes:
 
 Os 6 módulos são divididos em submódulos e estes, dividos em aulas. Por fim, as aulas são partidas em tópicos na plataforma, como no exemplo a seguir:
 
-<img src="/assets/print.png">
+<br>
+   <img src="/assets/print.png">
+<br>
 
 Para esse repo, resolvi organizar essas divisões a partir do uso de pastas, mas somente até às aulas. Os tópicos serão documentados através de commits com seu título sendo o mesmo da plataforma.
 
-Obs: Optei por iniciar a documentação apenas a partir do início do JavaScript, pulando assim, o módulo 1 e o primeiro submódulo do módulo 2.
+
+###### Obs: Optei por iniciar a documentação apenas a partir do início do JavaScript, pulando assim, o módulo 1 e o primeiro submódulo do módulo 2.
+
 
 ## :handshake: Colaboradores
 
