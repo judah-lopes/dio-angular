@@ -23,7 +23,7 @@ O curso é dividido em 6 módulos. Sendo estes:
 - Dominando Algoritmos com Desafios de Código JavaScript
 - Explorando o Angular Framework
 
-Os 6 módulos são divididos em submódulos e estes, dividos em aulas. Por fim, as aulas são partidas em tópicos na plataforma, como no exemplo a seguir:
+Os 6 módulos são divididos em submódulos (verde) e estes, dividos em aulas (azul). Por fim, as aulas são separadas em tópicos (vermelho) na plataforma, como no exemplo a seguir:
 
 <br>
    <img src="/assets/print.png">
