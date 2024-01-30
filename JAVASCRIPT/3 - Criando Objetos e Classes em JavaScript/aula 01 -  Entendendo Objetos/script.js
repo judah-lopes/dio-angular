@@ -1,24 +1,19 @@
-//! Estrutura básica de um objeto
+//! Criando métodos para o objeto   
+    /* método = função dentro do objeto */
 
-// const pedro = {
-//     nome: "Lucas Pereira Sampaio",
-//     idade: 25
-// }
+    const user = {
+    nome: "Lucas Pereira Sampaio",
+    idade: 25,
 
-// console.log(pedro.nome)
-// console.log(pedro.idade)
-// console.log(pedro)
+    apresentar: function () {
+        console.log(`Olá, meu nome é ${this.nome} e eu tenho ${this.idade} anos.`)
+    }                                /* this = este (se referindo ao objeto)*/
+}
 
-    
-//! Editando informações de um objeto
+/* SUBSTITUINDO UMA FUNÇÃO NO MÉTODO */
+user.apresentar = function () {       
+    console.log(`O nome dele é ${this.nome}`)
+}
 
-    const pedro = {
-        nome: "Lucas Pereira Sampaio",
-        idade: 25
-    }
-
-    pedro.genero = "Masculino" /* Criando uma nova informação */
-
-    delete pedro.nome /* Deletando uma informação */    
-
-    console.log(pedro)
+user.apresentar()
+ 
