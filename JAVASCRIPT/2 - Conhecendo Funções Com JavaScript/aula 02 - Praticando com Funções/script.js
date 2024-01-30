@@ -1,9 +1,8 @@
 // 1 - Faça uma função que escreva seu nome
 
-function escrevaMeuNome(nome) {
-    return (`Meu nome é ${nome}`)
-}
-console.log(escrevaMeuNome("Pedro Judah"))   
+function escreverNome(nome) {
+    return (`Seu nome é ${nome}`)
+}  
 
 /* ------------------------------------------------------------------------------------------------ */
 
@@ -17,5 +16,43 @@ function verificarIdade(idade) {
     }
 }
 
-console.log(verificarIdade(24))
+/* ------------------------------------------------------------------------------------------------ */
 
+// 3 - Faça uma função que invoque outras funções
+
+(function() {
+    console.log(`${escreverNome(`Pedro Judah`)} e ${verificarIdade(18)}`)
+})()
+
+/* ------------------------------------------------------------------------------------------------ */
+
+// 4 - Funções para calcular preço
+
+
+
+function aplicarDesconto(valor,desconto) {
+    return valor - (valor * (desconto / 100))
+}
+
+function aplicarJuros(valor,juros) {
+    return valor + (valor * (juros / 100))
+}
+
+
+
+function classificarForma() {
+    var precoEtiqueta = 100
+    var formaDePagamento = "A"
+    
+    if (formaDePagamento === "A") {
+        return aplicarDesconto(precoEtiqueta,10)
+    } else if (formaDePagamento === "B") {
+        return aplicarDesconto(precoEtiqueta,15)
+    } else if (formaDePagamento === "C") {   
+        return aplicarDesconto(precoEtiqueta,0)
+    } else if (formaDePagamento === "D") {
+        return aplicarJuros(precoEtiqueta, 10)
+    }
+}
+
+console.log(`O valor pago será de R$${classificarForma().toFixed(2)}`)
