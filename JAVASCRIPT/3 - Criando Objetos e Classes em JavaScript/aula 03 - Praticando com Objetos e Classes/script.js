@@ -46,14 +46,26 @@ class Pessoa {
     }
 
     calcularImc(){
-        const imc = this.peso / (this.altura ** 2)       
-        return `Meu nome é ${this.nome}, minha altura é ${this.altura}, meu peso é ${this.peso} e sendo assim, o valor do meu IMC é ${imc.toFixed(1)}`
+        // `Meu nome é ${this.nome}, minha altura é ${this.altura}, meu peso é ${this.peso} e sendo assim, o valor do meu IMC é ${imc.toFixed(1)}`
+        return this.peso / (this.altura ** 2)    
+    }
+
+    classificarImc() {
+        const imc = this.calcularImc()
+
+        if (imc < 18.5) {
+            return(`Segundo seu IMC, senhor(a) ${this.nome}, o(a) senhor(a) está abaixo do peso adequado.`)
+        } else if (imc < 25) {
+            return(`Segundo seu IMC, senhor(a) ${this.nome}, o(a) senhor(a) está dentro do peso adequado.`)
+        } else if (imc < 30) {
+            return(`Segundo seu IMC, senhor(a) ${this.nome}, o(a) senhor(a) está acima do peso adequado.`)
+        } else if (imc < 40) {
+            return(`Segundo seu IMC, senhor(a) ${this.nome}, o(a) senhor(a) está obeso.`)
+        } else {
+            return(`Segundo seu IMC, senhor(a) ${this.nome}, o(a) senhor(a) está com obesidade mórbida.`)
+        }
     }
 }
 
-const pedro = new Pessoa('Pedro', 96, 1.86);
-console.log(pedro.calcularImc())
-
-
-
-
+const jose = new Pessoa('José', 70, 1.75);
+console.log(jose.classificarImc())
