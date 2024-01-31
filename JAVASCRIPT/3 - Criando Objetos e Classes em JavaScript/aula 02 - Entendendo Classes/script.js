@@ -14,11 +14,15 @@ class User {
     }
 }
 
-const maria = new User("Maria Clara", 21);
+function compararIdades(user1,user2) {
+    if (user1.idade > user2.idade) {
+        console.log(`${user1.nome} é mais velho que ${user2.nome}`)
+    } else {
+        console.log(`${user1.nome} é mais novo que ${user2.nome}`)
+    }
+}
+
 const pedro = new User("Pedro Judah", 20);
+const ester = new User("Ester Hadassa", 16);
 
-console.log(maria)
-console.log(pedro)
-
-// pedro.apresentar()
-// maria.apresentar()
+compararIdades(pedro,ester)
