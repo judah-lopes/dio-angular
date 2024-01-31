@@ -1,3 +1,5 @@
-for (let i = 0; i <= 10; i++) {
-    console.log(i)
+const nome = 'Lucas Pereira Sampaio'
+
+for (let i = 0; i <= nome.length; i++) {
+    console.log(nome[i])
 }
