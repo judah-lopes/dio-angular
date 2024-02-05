@@ -1,30 +1,22 @@
+// Uma sala contém 5 alunos e para cada aluno foi sorteado um número entre 1 e 100.
+// Faça um programa que receba os 5 números sorteados para os alunos e mostre o maior número sorteado.
 
-/* 
-    Uma sala contém 5 alunos e para cada aluno foi sorteado um número entre 1 e 100.
-    Faça um programa que receba os 5 números sorteados para os alunos e mostre o maior número sorteado.
+// Dados de entrada: 
+// 5
+// 50
+// 10
+// 98
+// 23
 
-    Dados de entrada: 
-    5
-    50
-    10
-    98
-    23
+// Saída: 98
 
-    Saída: 98
-*/
 const { gets, print } = require('./funcoes-auxiliares')
 
-const sorteados = []
-
-for (let i = 0; i < 5; i++) {
-    const sorteado = gets()
-    sorteados.push(sorteado)  
-}
-
+const qtdAlunos = gets()
 let maiorNumero = 0
 
-for (let i = 0; i < sorteados.length; i++) {
-    const sorteado = sorteados[i]
+for (let i = 0; i < qtdAlunos; i++) {
+    const sorteado = gets()
     if (sorteado > maiorNumero) {
         maiorNumero = sorteado
     }
