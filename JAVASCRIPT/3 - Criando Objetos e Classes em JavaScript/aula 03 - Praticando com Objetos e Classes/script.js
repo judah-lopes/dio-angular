@@ -68,4 +68,10 @@ class Pessoa {
 }
 
 const jose = new Pessoa('José', 70, 1.75);
+const dhiego = new Pessoa('Dhiego', 90,1.76)
+const judah = new Pessoa('Judah', 96,1.86)
+const gadelha = new Pessoa('Gadelha', 94,1.93)
 console.log(jose.classificarImc())
+console.log(dhiego.classificarImc())
+console.log(judah.classificarImc())
+console.log(gadelha.classificarImc())

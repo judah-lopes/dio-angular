@@ -7,4 +7,4 @@ function print(texto){
 
 // module.exports.gets = gets
 
-module.exports = {gets, print}
+module.exports = { gets, print }
