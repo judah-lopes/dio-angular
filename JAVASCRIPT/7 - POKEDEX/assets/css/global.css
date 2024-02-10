@@ -1,12 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap')
-
 * {
     font-family: 'Roboto';
+    box-sizing: border-box;
+    
+    --cor-dex-number: #0000004f;
+    --cor-planta-primaria: #3ec2a3;
+    --cor-planta-type: #58d4be;
+}
+
+html{
+    font-size: 62.5%;
+    font-weight: 500;
+}
+body{
+    font-size: 16px;
 }
 
 .content {
-    padding: 1rem;
+    padding: 1.6rem;
 }
+
+.pokemons{
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    list-style: none;
+}
+
+.pokemon{
+    margin: .8rem;
+    padding: 1.6rem;
+    border-radius: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+
+    color: whitesmoke;
+
+}
+    .pokemon .dex-number{
+        color: var(--cor-dex-number);
+        font-size: 1.3rem;
+        text-align: end;
+    }
+
+    .pokemon .name{
+        margin-bottom: .6rem;
+    }
+
+/* POKEMON DETALHES */
+.pokemon .details{
+    display: flex;
+    justify-content: space-between;
+} 
+
+    /* TIPOS DO POKEMON */
+    .details .types{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .types .type{
+        margin: .4rem 0;
+        padding: .4rem .8rem;
+        
+        text-align: center;
+
+        font-size: 1rem;
+        background-color: var(--cor-planta-type);
+        border-radius: 1.6rem;
+    }
+
+    /* IMAGEM DO POKEMON */
+    .details img{
+        max-width: 100%;
+        height: 70px;
+    }
+
+/* ESTILOS DE CADA TIPO */
+.planta{
+    background-color: var(--cor-planta-primaria);
+}
+
 
 
 
