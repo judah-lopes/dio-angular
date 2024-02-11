@@ -4,16 +4,15 @@ const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
 
 //fetch = requisitar 
 fetch(url)
-    .then(function (response) {   //then = quando certo, response
-        response
-            .json()
-            .then(function (responseBody) {      //response.json() = converte a response (body) em um tipo "any", json
-                console.log(responseBody)
-            })
+    .then(function (response) {     // 1º then = transforma o promise em json
+        return response.json()
     })
-    .catch(function (error) {     //catch = quando errado, error
+    .then(function (jsonBody) {     // 2º then = já recebe o body convertido em json
+        console.log(jsonBody)
+    })
+    .catch(function (error) {     
         console.error(error);
     })
-    .finally(function () {        // finally = quando operação termina, não importa certo, ou errado
+    .finally(function () {        
         console.log(`Requisição concluída!`)
     })
