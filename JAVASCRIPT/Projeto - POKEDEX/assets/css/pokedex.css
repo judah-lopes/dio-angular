@@ -72,6 +72,9 @@
 /* ESTILOS DE CADA TIPO */
 .planta{
     background-color: var(--cor-planta-primaria);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*!---------- @mediaqueries ----------*/
