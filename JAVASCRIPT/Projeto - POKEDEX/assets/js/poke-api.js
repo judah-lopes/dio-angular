@@ -5,7 +5,6 @@ function convertPokeDetailsToPokemon(pokeDetails) {
     pokemon.dexNumber = pokeDetails.id
     pokemon.name = pokeDetails.name
     pokemon.types = pokeDetails.types.map((typeSlot) => typeSlot.type.name)
-    pokemon.type = pokeDetails.types[0]
     pokemon.photo = pokeDetails.sprites.other['official-artwork'].front_default
 
     return pokemon
@@ -17,7 +16,7 @@ pokeApi.getPokemonDetail = (pokemon) => {
         .then(convertPokeDetailsToPokemon)
 }
 
-pokeApi.getPokemons = (offset = 0, limit = 9) => {
+pokeApi.getPokemons = (offset = 0, limit = 151) => {
     const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
 
     return fetch(url)
