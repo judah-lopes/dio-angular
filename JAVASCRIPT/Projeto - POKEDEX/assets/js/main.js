@@ -1,3 +1,5 @@
+const pokemonList = document.querySelector(`#pokemonList`)
+
 function convertPokemonToLi(pokemon) {
     return `
         <li class="pokemon planta">
@@ -16,12 +18,6 @@ function convertPokemonToLi(pokemon) {
     `
 }
 
-const pokemonList = document.querySelector(`#pokemonList`)
-
 pokeApi.getPokemons().then((pokemons = []) => {
     pokemonList.innerHTML += pokemons.map(convertPokemonToLi).join('')  
 })
-
-// const newList = pokemons.map((pokemon) => convertPokemonToLi(pokemon))
-// const newHtml = newList.join('')
-// pokemonList.innerHTML += newHtml
