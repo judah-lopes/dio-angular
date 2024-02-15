@@ -5,9 +5,13 @@
     padding: 1.5rem;
 
     background-color: #fff;
+
+    text-align: center;
 }
 .content h1{
     margin-left: 0.4rem;
+
+    text-align: left;
 }
 
 .pokemons{
@@ -29,7 +33,12 @@
     flex-direction: column;
 
     color: whitesmoke;
+    text-align: left;
 
+    background-image: url("../img/pokebola-bg1.png");
+    background-position: bottom right;
+    background-size: 11rem;
+    background-repeat: no-repeat;
 }
     .pokemon .dex-number{
         color: var(--cor-dex-number);
@@ -82,7 +91,7 @@
         align-items: center;
     }
 
-    #loadMore{
+    #load-more{
         margin: .6rem 0;
         padding: .6rem 1.2rem;
 
@@ -92,6 +101,8 @@
 
         font-size: 1.6rem;
         color: white;
+
+        cursor: pointer;
     }
 
 /* ESTILOS DE CADA TIPO */
@@ -158,10 +169,18 @@
     .pokemons{
         grid-template-columns: 1fr 1fr;
     }
+
+    .pokemon{
+        background-size: 12rem;
+    }
 }
 @media screen and (min-width: 576px) {
     .pokemons{
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .pokemon{
+        background-size: 14rem;
     }
 
     .pokemon .dex-number{
@@ -183,7 +202,7 @@
         height: 100px;
     }
 
-    #loadMore{
+    #load-more{
         margin: .8rem 0;
         padding: .8rem 1.6rem;
         
@@ -205,6 +224,10 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
+    .pokemon{
+        background-size: 16rem;
+    }
+
     .dex-number{
         font-size: 2rem;
     }
@@ -220,9 +243,9 @@
     .details img{
         height: 120px;
     }
-    #loadMore{
-        margin: 1.2rem 0;
-        padding: 1.2rem 2rem;
+    #load-more{
+        margin: 1rem 0;
+        padding: 1rem 1.5rem;
 
         border-radius: 2.4rem;
 
@@ -232,6 +255,10 @@
 @media screen and (min-width: 1400px){
     .pokemons{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .pokemon{
+        background-size: 18rem;
     }
 
     .dex-number{
@@ -247,15 +274,15 @@
     }
 
     .details img{
-        height: 140px;
+        height: 130px;
     }
 
-    #loadMore{
-        margin: 1.4rem 0;
-        padding: 1.4rem 2.2rem;
+    #load-more{
+        margin: 1.2rem 0;
+        padding: 1rem 2rem;
 
         border-radius: 3rem;
 
-        font-size: 3rem;
+        font-size: 2.6rem;
     }
 } 
