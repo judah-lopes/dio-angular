@@ -1,13 +1,23 @@
-
-/* classe = molde (poo) */    /* extends = herda os comportamento de um HTML Element */
-class CardNews extends HTMLElement {   //<-- uma classe q vai se comportar como um elemento html 
+class CardNews extends HTMLElement {
     
     constructor(){
-        /* super = constructor de quem se herda (HTMLElement) */
         super()
-                       /* adiciona uma shadow em THIS classe */
-        const shadow = this.attachShadow({ mode: "open" })    //closed = exterior não mexe (outros arquivos etc.)
-        shadow.innerHTML = '<h1>Hello World</h1>'             //open = exterior mexe (js etc.)
+
+        const shadow = this.attachShadow({ mode: "open" })
+
+        shadow.innerHTML = 
+        `
+            <div class="card">
+                <div class="card-left">
+                    <span>By Pedro Judah</span>
+                    <h1>Darth Vader Contrata Devs</h1>
+                    <p>Darth Vader procura desenvolvedores que saibam usar components</p>
+                </div>
+                <div class="card-right">
+                    <img src="assets/img/darth-vader.png" alt="darthinho" style="width: 300px;">
+                </div>
+            </div>
+        `
     }
 }
 
