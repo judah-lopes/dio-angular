@@ -1,7 +1,7 @@
 const pokemonList = document.querySelector(`#pokemonList`)
 const loadMore = document.querySelector('#load-more')
 
-const maxItens = 151
+// const maxItens = 151
 const limit = 10
 let offset = 0
 
@@ -30,15 +30,15 @@ loadPokemonItems(offset, limit)
 
 loadMore.addEventListener('click', () => {
     offset += limit
-    const qtdItens = offset + limit
+    // const qtdItens = offset + limit
 
-    if (qtdItens >= maxItens) {
-        const newLimit = maxItens - offset
-        loadPokemonItems(offset, newLimit)
+    // if (qtdItens >= maxItens) {
+    //     const newLimit = maxItens - offset
+    //     loadPokemonItems(offset, newLimit)
 
-        loadMore.parentElement.removeChild(loadMore)
-    } else {
+    //     loadMore.parentElement.removeChild(loadMore)
+    // } else {
         loadPokemonItems(offset, limit)
-    }
+    // }
 
 })
