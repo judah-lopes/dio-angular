@@ -14,8 +14,8 @@ class CardNews extends HTMLElement{
 
         const cardLeft = document.createElement("div")
         cardLeft.setAttribute("class", "card-left")
-            const newsAutor = document.createElement("span")
-            newsAutor.textContent = `By ${this.getAttribute("autor") || 'Anonymous'}` 
+            const newsAuthor = document.createElement("span")
+            newsAuthor.textContent = `By ${this.getAttribute("author") || 'Anonymous'}` 
 
             const newsTitle = document.createElement("h1")
             newsTitle.textContent = this.getAttribute("title")
@@ -29,7 +29,7 @@ class CardNews extends HTMLElement{
             newsImage.src = this.getAttribute("img-src") || "assets/img/default-placeholder.png"
 
         componentRoot.appendChild(cardLeft)
-            cardLeft.appendChild(newsAutor)
+            cardLeft.appendChild(newsAuthor)
             cardLeft.appendChild(newsTitle)
             cardLeft.appendChild(newsContent)
 
