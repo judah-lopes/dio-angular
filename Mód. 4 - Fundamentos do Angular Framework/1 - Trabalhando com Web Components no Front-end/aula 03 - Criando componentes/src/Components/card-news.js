@@ -36,7 +36,6 @@ class CardNews extends HTMLElement{
         componentRoot.appendChild(cardRight)
             cardRight.appendChild(newsImage)
 
-
         return componentRoot
     }
 
@@ -91,5 +90,4 @@ class CardNews extends HTMLElement{
     }
 
 }
-
 customElements.define("card-news", CardNews)
