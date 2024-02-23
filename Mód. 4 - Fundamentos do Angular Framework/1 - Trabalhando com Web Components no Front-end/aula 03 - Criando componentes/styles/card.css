@@ -10,17 +10,18 @@ body{height:100vh; display: flex; flex-direction: column; justify-content: cente
 
 .container, .teste-pessoal{display: flex; justify-content: center;}
 
-card-news{
+card-news, .card{
+    margin: 30px;
     width: 80%;
     
     display: flex;
     justify-content: space-between;
 
-    box-shadow: 14px 10px 16px -7px #0000008c;
-    -webkit-box-shadow: 14px 10px 16px -7px #0000008c;
-    -moz-box-shadow: 14px 10px 16px -7px #0000008c;
+    box-shadow: 10px 10px 16px 4px #000000a6;
+    -webkit-box-shadow: 10px 10px 16px 4px #000000a6;
+    -moz-box-shadow: 10px 10px 16px 4px #000000a6;
 }
-/* 
+
 .card-left{
     padding: 10px;
 
@@ -40,5 +41,5 @@ card-news{
 
 .card-left p{
     color: gray;
-} */
+}
 
