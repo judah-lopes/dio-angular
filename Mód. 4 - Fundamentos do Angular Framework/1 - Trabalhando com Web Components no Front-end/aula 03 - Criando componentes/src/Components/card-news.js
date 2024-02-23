@@ -40,7 +40,55 @@ class CardNews extends HTMLElement{
         return componentRoot
     }
 
-    styles(){}
+    styles(){
+        const style = document.createElement("style")
+        style.textContent = `
+            card-news{
+                display: flex; 
+                justify-content: center;
+            }
+            .card{
+                margin: 30px;
+                width: 80%;
+                height: 180px;
+                
+                display: flex;
+                justify-content: space-between;
+            
+                box-shadow: 10px 10px 16px 4px #000000a6;
+                -webkit-box-shadow: 10px 10px 16px 4px #000000a6;
+                -moz-box-shadow: 10px 10px 16px 4px #000000a6;
+            }
+            
+            .card-left{
+                padding: 10px;
+            
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .card-left span{
+                font-weight: 400;
+            }
+            
+            .card-left h1{
+                margin-top: 15px;
+                font-size: 25px;
+            }
+            
+            .card-left p{
+                color: gray;
+            }
+
+            .card-right img{
+                height: 100%;
+
+            }
+        `
+
+        return style
+    }
 
 }
 
