@@ -6,17 +6,21 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.card{
+body{height:100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+.container, .teste-pessoal{display: flex; justify-content: center;}
+
+card-news{
     width: 80%;
     
     display: flex;
     justify-content: space-between;
 
-    box-shadow: 14px 10px 16px -7px rgba(0,0,0,0.55);
-    -webkit-box-shadow: 14px 10px 16px -7px rgba(0,0,0,0.55);
-    -moz-box-shadow: 14px 10px 16px -7px rgba(0,0,0,0.55);
+    box-shadow: 14px 10px 16px -7px #0000008c;
+    -webkit-box-shadow: 14px 10px 16px -7px #0000008c;
+    -moz-box-shadow: 14px 10px 16px -7px #0000008c;
 }
-
+/* 
 .card-left{
     padding: 10px;
 
@@ -36,6 +40,5 @@
 
 .card-left p{
     color: gray;
-}
-
+} */
 
