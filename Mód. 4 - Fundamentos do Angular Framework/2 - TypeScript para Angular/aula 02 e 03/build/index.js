@@ -26,4 +26,11 @@ let meuProduto = {
 /*------------------ ARRAY ------------------*/
 let dados = ["Felipe", "Ana", "Adriana"];
 let dados2 = ["Felipe", "Ana", "Adriana"];
+//Array MultiType
 let infos = ["Felipe", 30, "Carlos"];
+//Tuplas = Array, mas que tem que respeitar a ordem
+let boleto = ["agua conta", 199.90, 2993383];
+//Métodos = Os mesmos do js
+/*------------------ DATAS ------------------*/
+let aniversario = new Date("2003-08-10 07:30");
+console.log(aniversario.toDateString());

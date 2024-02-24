@@ -42,7 +42,11 @@ let dados2: Array<string> = ["Felipe", "Ana", "Adriana"]
 //Array MultiType
 let infos: (string | number)[] = ["Felipe", 30, "Carlos"]
 
-/*----------------- TUPLAS ------------------*/
-let boleto:[string, number, number] = ["agua conta", 199.90, 2993383] //<- Array, mas que tem que respeitar a ordem
+//Tuplas = Array, mas que tem que respeitar a ordem
+let boleto:[string, number, number] = ["agua conta", 199.90, 2993383] 
 
+//Métodos = Os mesmos do js
 
+/*------------------ DATAS ------------------*/
+let aniversario: Date = new Date("2003-08-10 07:30")
+console.log(aniversario.toString())
