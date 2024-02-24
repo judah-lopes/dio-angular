@@ -1,3 +1,4 @@
+console.log("teste")
 /*---------------- VARIÁVEIS ----------------*/
 
     //Tipos Primitivos: boolean, number, string
@@ -37,6 +38,8 @@ let meuProduto: ProdutoLoja = {
 /*------------------ ARRAY ------------------*/
 let dados: string[] = ["Felipe", "Ana", "Adriana"]
 let dados2: Array<string> = ["Felipe", "Ana", "Adriana"]
+
+let infos: (string | number)[] = ["Felipe", 30, "Carlos"]
 
 
 
