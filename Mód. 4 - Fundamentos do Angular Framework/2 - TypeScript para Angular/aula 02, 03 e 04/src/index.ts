@@ -1,41 +1,19 @@
-/*---- INTERFACES (type x interface) ----*/
-type robot = {
-    readonly id: number   //readonly = bloqueia qualquer alteração
+/*---- CLASSES ----*/
+
+class Character {
     name: string
-}
-interface robot2 {     //<--- Este contrato TEM que ter  
-    id: number | string        //   um id:number/string,                 
-    name: string               //   um name:string e
-    sayHello():string          //   um método sayHello():string
-}  
+    strength: number
+    skill: number
 
-const bot1: robot = {
-    id: 1,
-    name: 'RoboCop'
-}
-
-const bot2: robot2 = {
-    id: 1,
-    name: 'Megaman',
-    sayHello: function (): string {
-        throw new Error("Function not implemented.")
-    }
-}
-
-//! TIPO -> TIPAR OBJETOS (VARIÁVEL)
-//! INTEFACE -> CLASSE
-class Pessoa implements robot2{
-    id: string | number
-    name: string
-
-    constructor(id: string | number, name: string){
-        this.id = id
+    constructor(name: string, strength: number, skill: number){
         this.name = name
+        this.strength = strength
+        this.skill = skill
     }
-    sayHello():string {
-        return `Hello, ${this.name}`
+    attack(): void{
+        console.log(`Attack with ${this.strength} points`)
     }
 }
 
-const Felipe = new Pessoa(1, 'Robocop')
-console.log(Felipe.sayHello())
+const p1 = new Character('pedro', 10, 98);
+console.log(p1.attack())
