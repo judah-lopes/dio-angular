@@ -12,6 +12,10 @@ function callToPhone(phone:number | string): number | string /*: any*/ {
     return phone
 }
 
+async function getDataBase(id:number): Promise<string> {
+    return "Felipe"
+}
+
 let soma: number = addNumber(4, 7)
 
 console.log(soma)
