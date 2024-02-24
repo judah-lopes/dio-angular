@@ -1,23 +1,27 @@
 console.log("teste")
-/*---------------- FUNÇÕES ----------------*/
-function addNumber(x:number, y:number): number {
-    return x + y
+/*---- INTERFACES (type x interface) ----*/
+
+// type -> tipar uma variável específica, pra que as propriedades dela sejam sempre as mesmas
+type robot = {
+    readonly id: number   //readonly = bloqueia qualquer alteração
+    name: string
 }
 
-function addToHello(name:string) {
-    return `Hello ${name}`
+// interface -> trabalhar com Class 
+   /* Contrato onde que quem o herdar, precisa segui-lo por completo */
+interface robot2 {
+    id: number | string
+    name: string
+}  
+
+const bot1: robot = {
+    id: 1,
+    name: 'RoboCop'
+}
+const bot2: robot2 = {
+    id: 1,
+    name: 'Megaman'
 }
 
-function callToPhone(phone:number | string): number | string /*: any*/ {
-    return phone
-}
-
-async function getDataBase(id:number): Promise<string> {
-    return "Felipe"
-}
-
-let soma: number = addNumber(4, 7)
-
-console.log(soma)
-console.log(addToHello("Judah"))
-console.log(callToPhone())
+console.log(bot1)
+console.log(bot2)

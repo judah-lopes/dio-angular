@@ -1,12 +1,12 @@
 "use strict";
 console.log("teste");
-/*---------------- FUNÇÕES ----------------*/
-function addNumber(x, y) {
-    return x + y;
-}
-function addToHello(name) {
-    return `Hello ${name}`;
-}
-let soma = addNumber(4, 7);
-console.log(soma);
-console.log(addToHello("Judah"));
+const bot1 = {
+    id: 1,
+    name: 'RoboCop'
+};
+const bot2 = {
+    id: 1,
+    name: 'Megaman'
+};
+console.log(bot1);
+console.log(bot2);
