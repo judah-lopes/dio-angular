@@ -1,15 +1,18 @@
 /*--------- CLASSES ---------*/
 
 /*---- Data Modifiers ----*/
-//Public - Pode ser acessado de qualquer local
-//Private - Só pode ser acessado de dentro da classe
-//Protected - Apenas as classes filhas podem acessar a classe pai
+// Public - Pode ser acessado de qualquer local
+// Private - Só pode ser acessado de dentro da classe
+// Protected - Apenas as classes filhas podem acessar a classe pai
+//
+// ? - Tira a obrigatoriedade
+// Readonly - apenas lê 
 
 
 class Character {
     private name: string
-    strength: number
-    skill: number
+    readonly strength: number
+    skill?: number
 
     constructor(name: string, strength: number, skill: number){
         this.name = name
