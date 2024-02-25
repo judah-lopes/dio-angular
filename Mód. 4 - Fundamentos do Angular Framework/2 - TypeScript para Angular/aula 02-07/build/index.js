@@ -5,6 +5,6 @@ function concatArray(...itens) {
 }
 const numArray = concatArray([1, 5], [3]);
 const stgArray = concatArray(["Pedro", "Judah"], ["Lopes"]);
-numArray.push('Indiozinhos');
+// numArray.push('Indiozinhos')
 console.log(numArray);
 console.log(stgArray);
