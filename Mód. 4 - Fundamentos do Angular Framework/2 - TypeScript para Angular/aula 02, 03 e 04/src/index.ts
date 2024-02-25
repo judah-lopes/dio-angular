@@ -1,14 +1,4 @@
 /*--------- CLASSES ---------*/
-
-/*---- Data Modifiers ----*/
-// Public - Pode ser acessado de qualquer local
-// Private - Só pode ser acessado de dentro da classe
-// Protected - Apenas as classes filhas podem acessar a classe pai
-//
-// ? - Tira a obrigatoriedade
-// Readonly - apenas lê 
-
-
 class Character {
     private name: string
     readonly strength: number
@@ -24,5 +14,23 @@ class Character {
     }
 }
 
+//Character: superclass
+//Magician: subclass
+class Magician extends Character{
+    magicPoints: number   //Atributos da subclass
+
+    constructor(name: string, strength: number, skill: number, magicPoints: number){
+        super(name, strength,skill)   //Atributos da superclass (pai).
+
+        this.magicPoints = magicPoints   
+        //Podemos reatribuir valores de atributos da classe PAI pelo meio do "this.".
+        //                                                                  ("esta" classe)                
+        //Porém, isso só acontece se o atributo na PAI o atributo estiver PUBLIC ou PROTECTED.
+        //                                                               (padrão)
+    }    
+}
+
 const p1 = new Character('pedro', 10, 98);
-console.log(p1.attack())
+const p2 = new Magician('João', 100, 20, 10);
+
+console.log(p1, p2)
