@@ -1,7 +1,13 @@
-/*---- CLASSES ----*/
+/*--------- CLASSES ---------*/
+
+/*---- Data Modifiers ----*/
+//Public - Pode ser acessado de qualquer local
+//Private - Só pode ser acessado de dentro da classe
+//Protected - Apenas as classes filhas podem acessar a classe pai
+
 
 class Character {
-    name: string
+    private name: string
     strength: number
     skill: number
 
