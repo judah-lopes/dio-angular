@@ -9,7 +9,7 @@ function ligarPara(heroi: Hero): string {
 }
 
 ligarPara({
-    nome: 'Peter Parker',
+    nome: 'Peter Park',
     vulgo: 'Spider-Man',
     telefone: '21 5932-2934',
 })
